@@ -1,0 +1,10 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "husky": {
+      "description": "A blank schematic.",
+      "factory": "./husky/index#husky",
+      "schema": "./husky/schema.json"
+    }
+  }
+}
