@@ -1,6 +1,6 @@
 tasks:
   - init: npm install -g @angular-devkit/schematics-cli lerna
-    command: yarn
+    command: lerna bootstrap
 image: .gitpod.Dockerfile
 
 vscode:
@@ -11,6 +11,3 @@ vscode:
     - EditorConfig.EditorConfig@0.14.4:EjFaoTaOf8wRmwR0LNY51A==
     - eg2.vscode-npm-script@0.3.11:peDPJqeL8FmmJiabU4fAJQ==
     - christian-kohler.npm-intellisense@1.3.0:yQtCdwoyo890Bn9NOEuEDA==
-    - CoenraadS.bracket-pair-colorizer@1.0.61:fqPT1sJEqaEdrfXeYbdW+A==
-    - joelday.docthis@0.7.1:OOpm9cdbc8T5+PL4o+MM3Q==
-    - VisualStudioExptTeam.vscodeintellicode@1.2.5:EN3Z8aYDgVM4fxuEjZvXcQ==
