@@ -1,0 +1,42 @@
+{
+	"folders": [
+		{
+			"path": "packages/husky",
+			"name": "@ngx-schematics/husky"
+		},
+		{
+			"path": "packages/utilities",
+			"name": "@ngx-schematics/utilities"
+		},		
+		{
+			"path": ".",
+			"name": "ngx-schematics"
+		}
+	],	
+	"extensions": {
+		"recommendations": [
+			"johnpapa.angular-essentials"
+		]
+	},
+	"settings": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnPaste": true,
+		"editor.formatOnSave": true,
+		"files.eol": "\n",
+		"files.encoding": "utf8",
+		"files.exclude": {
+			"**/.git": true
+		},
+		"files.insertFinalNewline": true,
+		"files.trimTrailingWhitespace": true,
+		"prettier.endOfLine": "lf",
+		"prettier.printWidth": 100,
+		"prettier.singleQuote": true,
+		"search.exclude": {
+			"**/node_modules": true,
+			"**/bower_components": true,
+			"**/*.code-search": true,
+			"**/dist": true
+		}
+	}
+}
