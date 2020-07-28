@@ -1,7 +1,8 @@
 tasks:
   - init: npm install -g @angular-devkit/schematics-cli lerna
     command: lerna bootstrap
-image: .gitpod.Dockerfile
+image:
+  file: .gitpod.Dockerfile
 
 vscode:
   extensions:
