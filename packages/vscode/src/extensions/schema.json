@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "id": "ExtensionOptions",
+  "title": "Options for the VS Code Extensions Schematic",
+  "type": "object",
+  "properties": {
+    "github": {
+      "type": "boolean",
+      "description": "Optionally installs GitHub extensions for VS Code.",
+      "default": false,
+      "x-prompt": "Would you like to install GitHub integration?"
+    },
+    "intellicode": {
+      "type": "boolean",
+      "description": "Installs Micrsosoft IntelliCode for improved code completion and recommendations.",
+      "default": true,
+      "x-prompt": "Would you like intelligent code completion with IntelliCode?"
+    },
+    "name": {
+      "type": "string"
+    }
+  },
+  "required": []
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "id": "DevContainerOptions",
+  "title": "Options for the devcontainer Schematic",
+  "type": "object",
+  "properties": {
+    "node-version": {
+      "type": "string",
+      "enum": [
+        "10",
+        "12",
+        "14"
+      ],
+      "description": "The desired version of NodeJS to run in the container.",
+      "default": "14",
+      "x-prompt": "Which version of NodeJS would you like to use?"
+    },
+    "name": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "name"
+  ]
+}
