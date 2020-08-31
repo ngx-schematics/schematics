@@ -19,11 +19,12 @@
   "dependencies": {
     "@angular-devkit/core": "^9.1.1",
     "@angular-devkit/schematics": "^9.1.1",
+    "@phenomnomnominal/tsquery": "^4.1.0",
     "schematics-utilities": "^2.0.1",
     "semver": "^7.3.2",
     "typescript": "~3.8.2"
   },
-  "devDependencies": {
+  "devDependencies": {    
     "@types/jest": "^25.2.1",
     "@types/semver": "^7.1.0",
     "@typescript-eslint/eslint-plugin": "^2.30.0",
