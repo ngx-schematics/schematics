@@ -10,6 +10,8 @@ export default function extensions(options: any): Rule {
 
     if (options.intellicode) {
       recommendedExtensions.push('visualstudioexptteam.vscodeintellicode');
+      recommendedExtensions.push('christian-kohler.npm-intellisense');
+      recommendedExtensions.push('christian-kohler.path-intellisense');
     }
 
     if (options.github) {
@@ -22,7 +24,7 @@ export default function extensions(options: any): Rule {
       new Set([...existingRecommendations, ...recommendedExtensions])
     ).sort();
     const recommended = {
-      recommended: combinedRecommendations
+      recommendations: combinedRecommendations
     };
 
     if (tree.exists(EXTENSIONS_JSON_FILE)) {
