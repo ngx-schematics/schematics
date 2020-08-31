@@ -1,0 +1,16 @@
+{
+  "folders": [
+    {
+      "path": "packages/husky",
+      "name": "@ngx-schematics/husky"
+    },
+    {
+      "path": "packages/utilities",
+      "name": "@ngx-schematics/utilities"
+    },
+    {
+      "path": ".",
+      "name": "ngx-schematics"
+    }
+  ]
+}
