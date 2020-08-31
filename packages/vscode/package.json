@@ -15,6 +15,7 @@
   "dependencies": {
     "@angular-devkit/core": "^10.0.4",
     "@angular-devkit/schematics": "^10.0.4",
+    "deep-extend": "^0.6.0",
     "schematics-utilities": "^2.0.1",
     "typescript": "~3.9.7"
   },

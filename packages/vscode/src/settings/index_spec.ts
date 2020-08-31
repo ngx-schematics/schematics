@@ -11,6 +11,6 @@ describe('settings', () => {
     const tree = await runner.runSchematicAsync('settings', {}, Tree.empty()).toPromise();
 
     // Listing files
-    expect(tree.files.sort()).toEqual(['/.vscode/extensions.json', '/.vscode/settings.json']);
+    expect(tree.files.sort()).toEqual(['/.vscode/settings.json']);
   });
 });
