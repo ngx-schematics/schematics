@@ -24,6 +24,21 @@ export class TypeScriptFile {
     );
   }
 
+  public getProperties() {
+    return this.getNodesOfType(
+      ts.SyntaxKind.PropertyAssignment
+    ) as ts.PropertyAssignment[];
+  }
+
+  public getPropertyAssignment(identifierName: string) {
+    return this.getProperties().find((property) => {
+      const identifer = property
+        .getChildren()
+        .find(byKind(ts.SyntaxKind.Identifier)) as ts.Identifier;
+      return identifer && identifer.escapedText === identifierName;
+    });
+  }
+
   public getNodesOfType(type: ts.SyntaxKind): ts.Node[] {
     return this.getNodes(this._sourceFile, byKind(type));
   }
