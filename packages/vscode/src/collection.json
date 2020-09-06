@@ -16,11 +16,17 @@
   "schematics": {
     "extensions": {
       "description": "Creates an extensions.json file with recommended extensions for the project.",
-      "factory": "./extensions"
+      "factory": "./extensions",
+      "schema": "./extensions/schema.json"
     },
     "settings": {
       "description": "Generates recommended default settings for Visual Studio Code",
       "factory": "./settings"
+    },
+    "devcontainer": {
+      "description": "Generates VS Code dev container configuration files",
+      "factory": "./devcontainer",
+      "schema": "./devcontainer/schema.json"
     }
   }
 }

@@ -13,12 +13,14 @@ import { getCurrentRecommendations } from '../util';
 
 export default function devcontainer(options: any): Rule {
   return (tree: Tree, _context: SchematicContext) => {
+    console.log('Options', options);
     const extensions = getCurrentRecommendations(tree);
     const copyFiles = apply(url('./files'), [
       template({
-        extensions,
-        nodeVersion: options.nodeVersion,
-        name: options.name
+        extensions: JSON.stringify(extensions),
+        nodeVersion: options['node-version'],
+        name: options.name || 'Angular Dev Container',
+        extraModules: ''
       }),
       move('./.devcontainer/')
     ]);

@@ -1,5 +1,5 @@
 {
-  "name": "ngx-schematics Container",
+  "name": "<%= name %>",
   "build": {
     "dockerfile": "Dockerfile",
     // Update 'VARIANT' to pick a Node version. Rebuild the container
