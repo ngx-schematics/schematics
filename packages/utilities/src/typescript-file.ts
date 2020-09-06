@@ -1,4 +1,5 @@
 import * as ts from 'typescript';
+import { tsquery } from 'tsquery';
 import { Tree, SchematicsException } from '@angular-devkit/schematics';
 
 const byKind = (kind: ts.SyntaxKind) => (node: ts.Node) => node?.kind === kind;
@@ -22,6 +23,10 @@ export class TypeScriptFile {
       ts.ScriptTarget.Latest,
       true
     );
+  }
+
+  public query(astQuery: string) {
+    return tsquery(this._sourceFile, astQuery);
   }
 
   public getProperties() {

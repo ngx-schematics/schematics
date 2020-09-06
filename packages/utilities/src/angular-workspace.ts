@@ -14,7 +14,7 @@ export default class AngularWorkspace {
     this.workspace = getWorkspace(_host);
   }
 
-  public get projects(): string[] {
+  public get projectNames(): string[] {
     return Object.keys(this.workspace.projects);
   }
 
