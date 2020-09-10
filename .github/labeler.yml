@@ -1,22 +1,22 @@
 # Add 'root' label to any root file changes
 root:
   - ./*
-  
+
 # Utilities Project Label
 utilities:
   - packages/utilities/*
   - packages/utilities/**/*
-  
+
 # VSCode Project Label
 vscode:
   - packages/vscode/*
-  - packages/vscode/**/*  
-  
+  - packages/vscode/**/*
+
 # Karma Project Label
 karma:
   - packages/karma/*
   - packages/karma/**/*
-  
+
 # Prettier Project Label
 prettier:
   - packages/prettier/*
@@ -34,8 +34,8 @@ husky:
 
 # Add 'test' label to any change to test specifications
 test:
-  - **/*.spec.ts
+  - ./**/*.spec.ts
 
 # Add 'docs` label to any change to a Markdown file
 docs:
-  - **/*.md
+  - ./**/*.md
