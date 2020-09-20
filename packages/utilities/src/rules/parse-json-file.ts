@@ -17,7 +17,7 @@ export function parseJsonFile(jsonFilePath: string, tree: Tree): JsonAstNode {
   const jsonBuffer = tree.read(jsonFilePath);
 
   if (jsonBuffer === null) {
-    throw new SchematicsException('Could not read package.json.');
+    throw new SchematicsException(`Could not parse JSON file ${jsonFilePath}.`);
   }
 
   const jsonContent = jsonBuffer.toString();
